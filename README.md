@@ -36,7 +36,7 @@
 
 # 📖 Finance Web App <a name="about-project"></a>
 
-- This project is a web app that allows users to check data for companies   such as 52 week high, 52 week low, market capitalization, and key stats to understand a each company finance.
+- This project is a web app that allows users to check data for companies such as 52 week high, 52 week low, market capitalization, and key stats to understand a each company finance.
 
   Access companies profile (Price, Beta, Volume Average, Market Capitalization, Last Dividend, 52 week range, stock price change, stock price change in percentage, Company Name, Exchange, Description, Industry, Sector, CEO,and Website).
 
@@ -228,6 +228,8 @@ Give a ⭐ if you liked this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I thank the Code Reviewers for their advice and time 🏆
+
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

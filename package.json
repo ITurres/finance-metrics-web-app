@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "finance-metrics-web-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://iturres.github.io/finance-metrics-web-app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",

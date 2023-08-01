@@ -5,3 +5,8 @@ body {
   color: black;
   font-family: 'Lato', sans-serif;
 }
+
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}

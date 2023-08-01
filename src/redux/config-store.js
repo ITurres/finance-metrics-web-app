@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import companiesReducer from './companies/companiesSlice';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    companiesReducer,
+  },
 });
 
 export default store;

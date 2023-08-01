@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-    <img src="src/assets/images/" alt="logo" width="100"  height="auto" />
+    <img src="src/assets/images/finance-favicon.png" alt="logo" width="150"  height="auto" />
     <h1><b>Finance Web App</b></h1>
 </div>
 
@@ -36,9 +36,9 @@
 
 # 📖 Finance Web App <a name="about-project"></a>
 
-- This project is a web app that allows users to check data for companies such as 52 week high, 52 week low, market capitalization, and key stats to understand a each company finance.
+- This project is a user-friendly web app providing comprehensive company data, including financial metrics like 52-week high, 52-week low, and market capitalization. Features include personalized watchlists, Mobile-friendly, easy to use, and modern design.
 
-  Access companies profile (Price, Beta, Volume Average, Market Capitalization, Last Dividend, 52 week range, stock price change, stock price change in percentage, Company Name, Exchange, Description, Industry, Sector, CEO,and Website).
+  Access companies profile (Price, Beta, Volume Average, Market Capitalization, Last Dividend, 52 week range, stock price change, stock price change in percentage, Company Name, Sector, website and image link).
 
 ---
 
@@ -188,12 +188,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Select the API.
-- [ ] Build files structure for React app.
-- [ ] Prepare routes and navigation in app.
-- [ ] Make sure that a user can display a list of items and filter them.
+- [x] Select the API.
+- [x] Build files structure for React app.
+- [x] Prepare routes and navigation in app.
+- [x] Make sure that a user can display a list of items and filter them.
 - [ ] Create the tests for the application.
-- [ ] Style components to match the design provided.
+- [x] Style components to match the design provided.
 - [ ] Deploy the project and test for final details.
 - [ ] Record a video for your project.
 

@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import filterCompaniesData from '../../utils/filterCompaniesData';
 
 const companiesStockSymbols = [
   'AAPL',
@@ -20,31 +21,21 @@ const companiesStockSymbols = [
 const fetchCompanies = createAsyncThunk(
   'companies/fetchCompanies',
   async (thunkAPI) => {
-    const apiKey = '30935bc4d24e2abdfb241125ca11dde3';
+    const apiKey = '1beff6a8acdee6d6ce20373af97ec14f';
 
-    const fetchCompanyData = async (symbol) => {
-      const localStorageKey = `company_${symbol}`;
-      let dataFromLocalStorage = localStorage.getItem(localStorageKey);
-
-      if (!dataFromLocalStorage) {
-        const url = `https://financialmodelingprep.com/api/v3/profile/${symbol}?apikey=${apiKey}`;
-        try {
-          const response = await axios.get(url);
-          dataFromLocalStorage = JSON.stringify(response.data);
-          localStorage.setItem(localStorageKey, dataFromLocalStorage);
-        } catch (error) {
-          return thunkAPI.rejectWithValue(error);
-        }
-      }
-
-      return JSON.parse(dataFromLocalStorage);
-    };
+    if (localStorage.getItem('companies')) {
+      return JSON.parse(localStorage.getItem('companies'));
+    }
 
     try {
-      const companies = await Promise.all(
-        companiesStockSymbols.map(fetchCompanyData),
+      const companies = await axios.get(
+        `https://financialmodelingprep.com/api/v3/profile/${companiesStockSymbols.toString()}?apikey=${apiKey}`,
       );
-      return companies;
+
+      const filteredCompaniesData = companies.data.map((company) => filterCompaniesData(company));
+
+      localStorage.setItem('companies', JSON.stringify(filteredCompaniesData));
+      return filteredCompaniesData;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }

@@ -3,14 +3,16 @@ import { NavLink } from 'react-router-dom';
 import { FaAngleLeft, FaMicrophone, FaCog } from 'react-icons/fa';
 
 const Header = () => (
-  <Navbar className="bg-dark dark" style={{ background: 'red' }}>
+  <Navbar style={{ background: 'var(--dark-pink)' }}>
     <Container>
       <NavLink to="/">
-        <FaAngleLeft className="text-body-primary" />
+        <FaAngleLeft className="text-body-primary" size={26} color="white" />
       </NavLink>
-      {/* text */}
-      <FaMicrophone size={30} color="red" />
-      <FaCog size={30} color="blue" />
+      <h3 className="mb-0">finance</h3>
+      <div>
+        <FaMicrophone size={22} color="white" />
+        <FaCog size={22} color="white" style={{ marginLeft: '2rem' }} />
+      </div>
     </Container>
   </Navbar>
 );

@@ -3,7 +3,7 @@ import companiesReducer from './companies/companiesSlice';
 
 const store = configureStore({
   reducer: {
-    companiesReducer,
+    companies: companiesReducer,
   },
 });
 

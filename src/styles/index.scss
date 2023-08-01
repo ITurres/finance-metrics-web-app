@@ -13,6 +13,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 .strong {
   font-weight: bold;
 }
@@ -40,4 +44,17 @@ body {
   border: 2px solid white;
   border-radius: 100%;
   padding: 0.2rem;
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    justify-content: center;
+    width: max-content;
+  }
+  .companies-container,
+  .company__data {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
 }

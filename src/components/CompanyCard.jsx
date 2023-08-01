@@ -8,10 +8,10 @@ const CompanyCard = ({ company }) => (
     <Card.Body>
       <Link to={`/company?symbol=${company.symbol}`}>
         <FaArrowRight className="card__arrow-right" />
+        <Card.Img src={company.image} alt={company.companyName} />
+        <Card.Title>{company.symbol}</Card.Title>
+        <Card.Text>{company.price}</Card.Text>
       </Link>
-      <Card.Img src={company.image} alt={company.companyName} />
-      <Card.Title>{company.symbol}</Card.Title>
-      <Card.Text>{company.price}</Card.Text>
     </Card.Body>
   </Card>
 );

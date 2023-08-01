@@ -18,8 +18,8 @@ const CompaniesList = ({ companies }) => {
 
   return (
     <div className="companies-container">
-      {companies.map((company) => (
-        <CompanyCard company={company} key={company.symbol} />
+      {companies.map((company, index) => (
+        <CompanyCard company={company} index={index} key={company.symbol} />
       ))}
     </div>
   );

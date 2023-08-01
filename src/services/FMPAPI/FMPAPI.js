@@ -5,7 +5,6 @@ import filterCompaniesData from '../../utils/filterCompaniesData';
 const companiesStockSymbols = [
   'AAPL',
   'AMZN',
-  'SSNLF',
   'MSFT',
   'GOOG',
   'NVDA',
@@ -16,6 +15,7 @@ const companiesStockSymbols = [
   'ADBE',
   'CSCO',
   'JNJ',
+  'MCD',
 ];
 
 const fetchCompanies = createAsyncThunk(

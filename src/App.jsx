@@ -21,6 +21,14 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/company" element={<CompanyPage />} />
+        <Route
+          path="*"
+          element={(
+            <div className="error-container">
+              <h1>Not Found</h1>
+            </div>
+          )}
+        />
       </Routes>
     </header>
   );

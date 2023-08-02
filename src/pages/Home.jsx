@@ -1,9 +1,16 @@
 import { useSelector } from 'react-redux';
 import CompaniesList from '../components/CompaniesList';
 import logo from '../assets/images/finance-logo.png';
+import SearchBar from '../components/SearchBar';
 
 const Home = () => {
-  const companies = useSelector((state) => state.companies.companies);
+  let companies = useSelector((state) => state.companies);
+
+  if (companies.filteredCompanies.length === 0) {
+    companies = companies.companies;
+  } else {
+    companies = companies.filteredCompanies;
+  }
 
   return (
     <>
@@ -17,12 +24,13 @@ const Home = () => {
           </span>
         </div>
       </div>
-      <h5
-        className="container mt-2 pb-1"
+      <div
+        className="container mt-2 p-2 d-flex justify-content-between align-items-center"
         style={{ background: 'var(--dark-pink)' }}
       >
-        Stats by Company
-      </h5>
+        <h5 className="mb-0">Stats by Company</h5>
+        <SearchBar />
+      </div>
       <div className="companies__list">
         <CompaniesList companies={companies} />
       </div>

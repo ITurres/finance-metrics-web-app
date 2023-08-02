@@ -1,22 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import companiesData from '../../db/companiesData.json';
 import filterCompaniesData from '../../utils/filterCompaniesData';
-
-const companiesStockSymbols = [
-  'AAPL',
-  'AMZN',
-  'MSFT',
-  'GOOG',
-  'NVDA',
-  'TSLA',
-  'META',
-  'ORCL',
-  'NFLX',
-  'ADBE',
-  'CSCO',
-  'JNJ',
-  'MCD',
-];
 
 const fetchCompanies = createAsyncThunk(
   'companies/fetchCompanies',
@@ -29,7 +14,7 @@ const fetchCompanies = createAsyncThunk(
 
     try {
       const companies = await axios.get(
-        `https://financialmodelingprep.com/api/v3/profile/${companiesStockSymbols.toString()}?apikey=${apiKey}`,
+        `https://financialmodelingprep.com/api/v3/profile/${companiesData.symbols.toString()}?apikey=${apiKey}`,
       );
 
       const filteredCompaniesData = companies.data.map((company) => filterCompaniesData(company));

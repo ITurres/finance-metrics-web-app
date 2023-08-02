@@ -3,6 +3,7 @@ import fetchCompanies from '../../services/FMPAPI/FMPAPI';
 
 const initialState = {
   companies: [],
+  filteredCompanies: [],
   loading: false,
   error: null,
 };
@@ -10,7 +11,15 @@ const initialState = {
 const companiesSlice = createSlice({
   name: 'companies',
   initialState,
-  reducers: {},
+  reducers: {
+    searchCompanies(state, action) {
+      state.filteredCompanies = state.companies.filter((company) => {
+        const companySymbol = company.companyName.toLowerCase();
+        const searchTerm = action.payload.toLowerCase();
+        return companySymbol.includes(searchTerm);
+      });
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchCompanies.pending, (state) => {
@@ -26,5 +35,7 @@ const companiesSlice = createSlice({
       });
   },
 });
+
+export const { searchCompanies } = companiesSlice.actions;
 
 export default companiesSlice.reducer;

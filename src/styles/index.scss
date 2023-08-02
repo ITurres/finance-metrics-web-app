@@ -26,6 +26,18 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
+.spinner-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.error-container {
+  flex-direction: column;
+}
+
 .company__data-item {
   color: white;
   padding: 1.5rem 0.6rem;

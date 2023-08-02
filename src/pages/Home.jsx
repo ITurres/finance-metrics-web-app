@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import CompaniesList from '../components/CompaniesList';
-import logo from '../assets/images/finance-logo.png';
+import logo from '../assets/images/finance-chart.png';
 import SearchBar from '../components/SearchBar';
 
 const Home = () => {

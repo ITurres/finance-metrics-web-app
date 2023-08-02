@@ -37,7 +37,7 @@ const fetchCompanies = createAsyncThunk(
       localStorage.setItem('companies', JSON.stringify(filteredCompaniesData));
       return filteredCompaniesData;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error);
+      return thunkAPI.rejectWithValue({ error: error.message });
     }
   },
 );

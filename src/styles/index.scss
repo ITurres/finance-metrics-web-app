@@ -26,6 +26,17 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
+.search-bar {
+  max-height: 30px;
+  margin: 0.1rem 0;
+
+  &:focus {
+    border-color: var(--bright-pink);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--dark-pink);
+  }
+}
+
 .spinner-container,
 .error-container {
   display: flex;

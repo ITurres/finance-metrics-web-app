@@ -24,11 +24,7 @@ const CompanyPage = () => {
         />
         <div className="w-100 text-center">
           <h1 className="strong">{company.symbol}</h1>
-          <span>
-            USD
-            &nbsp;
-            {company.price}
-          </span>
+          <span>{company.price}</span>
         </div>
       </div>
       <h5

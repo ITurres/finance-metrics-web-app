@@ -39,7 +39,7 @@ CompanyCard.propTypes = {
     image: PropTypes.string.isRequired,
     companyName: PropTypes.string.isRequired,
     symbol: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    price: PropTypes.string.isRequired,
   }).isRequired,
   index: PropTypes.number.isRequired,
 };

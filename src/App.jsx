@@ -19,10 +19,10 @@ const App = () => {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/company" element={<CompanyPage />} />
+        <Route path="/finance-metrics-web-app/" element={<Home />} />
+        <Route path="/finance-metrics-web-app/company" element={<CompanyPage />} />
         <Route
-          path="*"
+          path="/finance-metrics-web-app/*"
           element={(
             <div className="error-container">
               <h1>Not Found</h1>

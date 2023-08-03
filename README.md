@@ -44,6 +44,7 @@
 
 #### Learning objectives
 
+- Follow a designated [design](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>).
 - Use React documentation.
 - Use React components.
 - Use React props.
@@ -111,7 +112,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link - EMPTY]()
+- [Live Demo Link](https://iturres.github.io/finance-metrics-web-app/)
+
+- [Project Presentation](https://drive.google.com/file/d/1L7tZ9wsICwrWNL_xhhQSJvOQZExxn_Az/view?usp=sharing)
 
 ---
 
@@ -192,10 +195,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - [x] Build files structure for React app.
 - [x] Prepare routes and navigation in app.
 - [x] Make sure that a user can display a list of items and filter them.
-- [ ] Create the tests for the application.
+- [x] Create the tests for the application.
 - [x] Style components to match the design provided.
-- [ ] Deploy the project and test for final details.
-- [ ] Record a video for your project.
+- [x] Deploy the project and test for final details.
+- [x] Record a video for your project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -229,7 +232,7 @@ Give a ⭐ if you liked this project!
 
 I thank the Code Reviewers for their advice and time 🏆
 
-Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+Original [design](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>) idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

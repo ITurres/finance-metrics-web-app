@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/finance-metrics-web-app/static/css/main.de733ab1.css",
-    "main.js": "/finance-metrics-web-app/static/js/main.7cf6c456.js",
+    "main.js": "/finance-metrics-web-app/static/js/main.857d69e2.js",
     "index.html": "/finance-metrics-web-app/index.html",
     "main.de733ab1.css.map": "/finance-metrics-web-app/static/css/main.de733ab1.css.map",
-    "main.7cf6c456.js.map": "/finance-metrics-web-app/static/js/main.7cf6c456.js.map"
+    "main.857d69e2.js.map": "/finance-metrics-web-app/static/js/main.857d69e2.js.map"
   },
   "entrypoints": [
     "static/css/main.de733ab1.css",
-    "static/js/main.7cf6c456.js"
+    "static/js/main.857d69e2.js"
   ]
 }

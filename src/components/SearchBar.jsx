@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { searchCompanies } from '../redux/companies/companiesSlice';
+import { searchCompanies } from '../redux/companies/companiesSlice.js';
 
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState('');

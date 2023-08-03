@@ -1,6 +1,6 @@
 const filterCompaniesData = (company) => ({
   symbol: company.symbol,
-  price: company.price,
+  price: `USD ${company.price}`,
   beta: company.beta,
   volAvg: company.volAvg,
   mktCap: company.mktCap,

@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
-import fetchCompanies from '../../services/FMPAPI/FMPAPI';
+import fetchCompanies from '../../services/FMPAPI/FMPAPI.js';
 
 const initialState = {
   companies: [],
+  filteredCompanies: [],
   loading: false,
   error: null,
 };
@@ -10,7 +11,15 @@ const initialState = {
 const companiesSlice = createSlice({
   name: 'companies',
   initialState,
-  reducers: {},
+  reducers: {
+    searchCompanies(state, action) {
+      state.filteredCompanies = state.companies.filter((company) => {
+        const companySymbol = company.companyName.toLowerCase();
+        const searchTerm = action.payload.toLowerCase();
+        return companySymbol.includes(searchTerm);
+      });
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchCompanies.pending, (state) => {
@@ -22,9 +31,11 @@ const companiesSlice = createSlice({
       })
       .addCase(fetchCompanies.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload;
+        state.error = action.payload?.error || 'Unknown error occurred';
       });
   },
 });
+
+export const { searchCompanies } = companiesSlice.actions;
 
 export default companiesSlice.reducer;

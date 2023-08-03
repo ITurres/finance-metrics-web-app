@@ -8,13 +8,22 @@ const CompaniesList = ({ companies }) => {
 
   if (loading) {
     return (
-      <Spinner animation="border" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </Spinner>
+      <div className="spinner-container">
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </div>
     );
   }
 
-  if (error) return <h2>{error}</h2>;
+  if (error) {
+    return (
+      <div className="error-container">
+        <h2>Something went wrong...</h2>
+        <p>{error}</p>
+      </div>
+    );
+  }
 
   return (
     <div className="companies-container">

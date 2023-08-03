@@ -24,11 +24,7 @@ const CompanyPage = () => {
         />
         <div className="w-100 text-center">
           <h1 className="strong">{company.symbol}</h1>
-          <span>
-            USD
-            &nbsp;
-            {company.price}
-          </span>
+          <span>{company.price}</span>
         </div>
       </div>
       <h5
@@ -40,21 +36,26 @@ const CompanyPage = () => {
       </h5>
       <div className="company__data">
         <ListGroup>
-          {Object.keys(company).map((value) => (
-            <ListGroup.Item key={value} className="company__data-item border-0">
-              <div className="d-flex justify-content-between">
-                <span>{value}</span>
-                <div>
-                  <span className="p-3">{company[value]}</span>
-                  <FaArrowRight
-                    className="FaArrowRight"
-                    size={22}
-                    color="white"
-                  />
+          {Object.keys(company)
+            .filter((value) => value !== 'image')
+            .map((value) => (
+              <ListGroup.Item
+                key={value}
+                className="company__data-item border-0"
+              >
+                <div className="d-flex justify-content-between">
+                  <span>{value}</span>
+                  <div>
+                    <span className="p-3">{company[value]}</span>
+                    <FaArrowRight
+                      className="FaArrowRight"
+                      size={22}
+                      color="white"
+                    />
+                  </div>
                 </div>
-              </div>
-            </ListGroup.Item>
-          ))}
+              </ListGroup.Item>
+            ))}
         </ListGroup>
       </div>
     </>

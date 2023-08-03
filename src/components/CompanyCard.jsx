@@ -14,7 +14,7 @@ const CompanyCard = ({ company, index }) => {
     >
       <Card.Body className="text-end p-2">
         <Link
-          to={`/company?symbol=${company.symbol}`}
+          to={`/finance-metrics-web-app/company?symbol=${company.symbol}`}
           className="text-decoration-none"
           style={{ color: 'white' }}
         >
@@ -39,7 +39,7 @@ CompanyCard.propTypes = {
     image: PropTypes.string.isRequired,
     companyName: PropTypes.string.isRequired,
     symbol: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
+    price: PropTypes.string.isRequired,
   }).isRequired,
   index: PropTypes.number.isRequired,
 };

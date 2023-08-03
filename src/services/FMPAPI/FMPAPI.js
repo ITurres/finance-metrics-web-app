@@ -2,11 +2,12 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import companiesData from '../../db/companiesData.json';
 import filterCompaniesData from '../../utils/filterCompaniesData';
+import config from '../../config';
 
 const fetchCompanies = createAsyncThunk(
   'companies/fetchCompanies',
   async (thunkAPI) => {
-    const apiKey = '1beff6a8acdee6d6ce20373af97ec14f';
+    const apiKey = config.FMP_KEY;
 
     if (localStorage.getItem('companies')) {
       return JSON.parse(localStorage.getItem('companies'));

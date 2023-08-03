@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import companiesData from '../../db/companiesData.json';
-import filterCompaniesData from '../../utils/filterCompaniesData';
-import config from '../../config';
+import filterCompaniesData from '../../utils/filterCompaniesData.js';
+import config from '../../config.js';
 
 const fetchCompanies = createAsyncThunk(
   'companies/fetchCompanies',

@@ -1,5 +1,5 @@
-import fetchCompanies from '../../services/FMPAPI/FMPAPI'; // Assuming this is where the API function is imported from
-import companiesReducer, { searchCompanies } from '../companies/companiesSlice';
+import fetchCompanies from '../../services/FMPAPI/FMPAPI.js'; // Assuming this is where the API function is imported from
+import companiesReducer, { searchCompanies } from '../companies/companiesSlice.js';
 
 describe('companiesSlice reducer', () => {
   const initialState = {

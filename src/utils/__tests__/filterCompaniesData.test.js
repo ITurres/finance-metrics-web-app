@@ -1,4 +1,4 @@
-import filterCompaniesData from '../filterCompaniesData';
+import filterCompaniesData from '../filterCompaniesData.js';
 
 describe('filterCompaniesData', () => {
   const companies = [

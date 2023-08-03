@@ -27,7 +27,7 @@
       "error",
       "ignorePackages",
       {
-        "js": "never",
+        "js": "always",
         "jsx": "never",
         "json": "always"
       }

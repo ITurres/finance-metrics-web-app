@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import { useDispatch } from 'react-redux';
 import SearchBar from '../SearchBar';
-import { searchCompanies } from '../../redux/companies/companiesSlice';
+import { searchCompanies } from '../../redux/companies/companiesSlice.js';
 
 jest.mock('react-redux', () => ({
   useDispatch: jest.fn(),

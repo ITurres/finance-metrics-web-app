@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import fetchCompanies from '../../services/FMPAPI/FMPAPI';
+import fetchCompanies from '../../services/FMPAPI/FMPAPI.js';
 
 const initialState = {
   companies: [],

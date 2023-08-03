@@ -23,6 +23,7 @@ const SearchBar = () => {
           type="button"
           aria-label="search"
           className="btn p-1"
+          data-testid="search-button"
           onClick={() => setShowSearchBar(!showSearchBar)}
         >
           <FaSearch color="white" size={20} />
@@ -33,6 +34,7 @@ const SearchBar = () => {
           placeholder="Search..."
           onChange={onHandleChange}
           className="search-bar form-control w-50"
+          data-testid="search-input"
         />
       )}
     </>

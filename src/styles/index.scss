@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap');
+
+:root {
+  --bright-pink: #fb5092;
+  --bright-pink-2: #dc4782;
+  --dark-pink: #d04379;
+  --darker-pink: #b03967;
+}
+
+body {
+  background-color: var(--bright-pink);
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.search-bar {
+  max-height: 30px;
+  margin: 0.1rem 0;
+
+  &:focus {
+    border-color: var(--bright-pink);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--dark-pink);
+  }
+}
+
+.spinner-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.error-container {
+  flex-direction: column;
+}
+
+.company__data-item {
+  color: white;
+  padding: 1.5rem 0.6rem;
+  font-size: 1.2rem;
+
+  &:nth-child(odd) {
+    background-color: var(--bright-pink);
+  }
+
+  &:nth-child(even) {
+    background-color: var(--dark-pink);
+  }
+}
+
+.FaArrowRight {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 0.2rem;
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    justify-content: center;
+    width: max-content;
+  }
+
+  .companies-container,
+  .company__data {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+}

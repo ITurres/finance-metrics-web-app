@@ -79,8 +79,8 @@
       <a href="https://jestjs.io/">Jest</a>
     </li>
     <li>
-      <img src="https://skillicons.dev/icons?i=css"/>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+      <img src="https://skillicons.dev/icons?i=sass"/>
+      <a href="https://sass-lang.com/">SASS</a>
     </li>
     <li>
       <img src="https://skillicons.dev/icons?i=bootstrap"/>
@@ -112,9 +112,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://iturres.github.io/finance-metrics-web-app/)
+- [Finance - Live Demo Link](https://iturres.github.io/finance-metrics-web-app/)
 
-- [Project Presentation](https://drive.google.com/file/d/1L7tZ9wsICwrWNL_xhhQSJvOQZExxn_Az/view?usp=sharing)
+- [Finance - Project Presentation](https://drive.google.com/file/d/1L7tZ9wsICwrWNL_xhhQSJvOQZExxn_Az/view?usp=sharing)
 
 ---
 

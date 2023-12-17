@@ -199,6 +199,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 - [x] Style components to match the design provided.
 - [x] Deploy the project and test for final details.
 - [x] Record a video for your project.
+- [ ] Migrate to TypeScript.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
